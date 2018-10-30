@@ -15,6 +15,7 @@ class AuthServiceProvider extends ServiceProvider
         \App\Thread::class => \App\Policies\ThreadPolicy::class,
         \App\Reply::class => \App\Policies\ReplyPolicy::class,
         \App\User::class => \App\Policies\UserPolicy::class,
+        \App\SamplePersion::class => \App\Policies\SamplePersion::class,
     ];
 
     /**

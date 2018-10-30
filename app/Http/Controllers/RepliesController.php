@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Reply;
 use App\Thread;
 use App\Http\Requests\CreatePostRequest;
+use App\Ola\Requests\HeldUponRequest;
 
 class RepliesController extends Controller
 {
@@ -35,8 +36,9 @@ class RepliesController extends Controller
      * @param  CreatePostRequest $form
      * @return \Illuminate\Database\Eloquent\Model
      */
-    public function store($channelId, Thread $thread, CreatePostRequest $form)
+    public function store($channelId, Thread $thread, CreatePostRequest $form, HeldUponRequest $hur)
     {
+        // dd('After Policy was checked');
         if ($thread->locked) {
             return response('Thread is locked', 422);
         }

@@ -27,9 +27,10 @@ class CreatePostRequest extends FormRequest
      */
     protected function failedAuthorization()
     {
-        throw new ThrottleException(
-            'You are replying too frequently. Please take a break.'
-        );
+        // throw new ThrottleException(
+        //     'You are replying too frequently. Please take a break.'
+        // );
+        return 1;
     }
 
     /**

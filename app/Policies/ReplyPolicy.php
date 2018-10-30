@@ -33,7 +33,6 @@ class ReplyPolicy
         if (! $lastReply = $user->fresh()->lastReply) {
             return true;
         }
-        // dd($lastReply = $user->fresh()->lastReply);
         return ! $lastReply->wasJustPublished();
     }
 }

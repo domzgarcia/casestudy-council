@@ -3,7 +3,8 @@
 return [
     'administrators' => [
         // Add the email addresses of users who should be administrators here.
-        'domgarciad@yahoo.com'
+        // 'domgarciad@yahoo.com',
+        'john@example.com'
     ],
 
     'reputation' => [
@@ -14,6 +15,6 @@ return [
     ],
 
     'pagination' => [
-        'perPage' => 2
+        'perPage' => 5
     ]
 ];
